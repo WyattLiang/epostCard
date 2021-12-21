@@ -8,3 +8,6 @@
 #4. To send a postcard to another user, just click the "magnifying lens" icon in the home page and then enter their account.
 #5. To see who share postcard to us, just click the "share" icon in the homepage.
 #6 You can change your profile by clicking the setting button.
+
+To compile, open Android Stuido -> click the ellipsis icon -> "Get from version control" 
+-> copy "https://github.com/WyattLiang/epostCard" into URL and click "clone". 
