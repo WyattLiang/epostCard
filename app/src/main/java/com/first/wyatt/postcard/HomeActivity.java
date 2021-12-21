@@ -101,9 +101,11 @@ public class HomeActivity extends AppCompatActivity {
                         Bundle extra = data.getBundleExtra("extra");
                         userName.setText(extra.getString("userName"));
                         profile_uri = extra.getString("uri");
+                        if(profile_uri != null){
+                            if(!profile_uri.equals("noProfile"))
+                                Picasso.with(HomeActivity.this).load(profile_uri).into(personal_image);
+                        }
 
-                        if(!profile_uri.equals("noProfile"))
-                            Picasso.with(HomeActivity.this).load(profile_uri).into(personal_image);
                     }
                 }
             });
