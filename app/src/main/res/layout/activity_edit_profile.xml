@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".EditProfileActivity">
+
+    <FrameLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center_horizontal|center_vertical|bottom"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <ImageButton
+            android:id="@+id/add_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bg_addprofile_btn"
+            android:layout_gravity="bottom|end"
+            android:onClick="chooseProfileImage"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit profile"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/mvboli"/>
+
+    <EditText
+        android:id="@+id/user_name_update"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_textbox"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/mvboli"
+        android:textSize="20sp"
+        android:hint="User name"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/firstN_update"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_textbox"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/mvboli"
+        android:hint="First Name"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/lastN_update"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_textbox"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/mvboli"
+        android:hint="Last Name"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/phone_update"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_textbox"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/mvboli"
+        android:hint="Phone No."
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/mvboli"
+        android:text="Update"
+        android:textSize="25sp"
+        android:background="@drawable/bg_round_button2"
+        android:textColor="#FFFFFF"
+        android:onClick="updateInfo"/>
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_round_button2"
+        android:text="Cancel"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/mvboli"
+        android:onClick="cancelUpdate"/>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ZoomPostCard">
+
+    <ImageView
+        android:id="@+id/zoom"
+        android:layout_width="380dp"
+        android:layout_height="482dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp" />
+
+    <Button
+        android:id="@+id/back_to_share_list"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_round_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="Back to share list"
+        android:textSize="20sp"
+        android:fontFamily="@font/mvboli"
+        android:textColor="#DF7817BD"/>
+
+</LinearLayout>

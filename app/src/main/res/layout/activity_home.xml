@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/bg"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/personal_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_baseline_account_circle_24" />
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/personal_image"
+            android:text="@string/user_name"
+            android:fontFamily="@font/mvboli"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/open_shared"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_setting"
+            android:onClick="setting"/>
+
+        <ImageButton
+            android:id="@+id/find_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/nickname"
+            android:background="@drawable/ic_find_friend"
+            android:onClick="addFriend"/>
+
+        <ImageButton
+            android:id="@+id/open_shared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/find_friend"
+            android:onClick="openShared"
+            android:background="@drawable/ic_open_share"/>
+        <ImageButton
+            android:id="@+id/log_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/setting"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_logout"
+            android:contentDescription="log out"
+            android:onClick="logOut"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="354dp"
+        android:layout_height="450dp"
+        android:background="#1B3A1818"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/show_images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/create_postCard"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ic_add_card"
+        android:onClick="createPostCard"/>
+</LinearLayout>

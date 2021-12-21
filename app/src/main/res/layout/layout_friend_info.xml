@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_friend"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_baseline_account_circle_24"/>
+
+    <TextView
+        android:id="@+id/email_friend"
+        android:layout_width="220dp"
+        android:layout_height="85dp"
+        android:layout_marginLeft="10dp"
+        android:hint="email address here"
+        android:textSize="15sp"
+        android:gravity="center_vertical"/>
+
+    <ImageButton
+        android:id="@+id/share_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/ic_share" />
+
+</LinearLayout>

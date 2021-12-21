@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".EditPostCardActivity">
+
+    <RelativeLayout
+        android:id="@+id/postcard_view"
+        android:layout_width="380dp"
+        android:layout_height="482dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
+        android:background="#FFFFFF"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/add_photo"
+            android:layout_width="104dp"
+            android:layout_height="104dp"
+            android:background="@drawable/ic_add_a_photo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="60dp"
+            android:onClick="showPopUpMenu"/>
+
+        <ImageView
+            android:id="@+id/select_photo"
+            android:layout_width="match_parent"
+            android:layout_height="241dp"
+            android:src="#19461717"/>
+
+        <ImageView
+            android:id="@+id/postcard"
+            android:layout_width="match_parent"
+            android:layout_height="241dp"
+            android:layout_below="@+id/select_photo"
+            android:background="@drawable/postcard_empty"/>
+
+        <EditText
+            android:id="@+id/content_postcard"
+            android:layout_width="180dp"
+            android:layout_height="241dp"
+            android:layout_below="@+id/select_photo"
+            android:hint="Edit Your content is here..."
+            android:textSize="12sp"
+            android:inputType="none"
+            android:fontFamily="@font/mvboli"
+            android:gravity="start|top"
+            android:padding="15dp"
+            android:background="@android:color/transparent"/>
+
+        <EditText
+            android:id="@+id/to_id"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/select_photo"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="85dp"
+            android:textSize="10sp"
+            android:hint="To who"
+            android:background="@android:color/transparent"/>
+
+        <EditText
+            android:id="@+id/by_id"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/to_id"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:hint="by who...."
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/edit_info"
+        android:layout_width="338dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/mvboli"
+        android:text="Click here to see preview"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_round_button"
+        android:onClick="previewPostCard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postcard_view"
+        app:layout_constraintVertical_bias="0.253" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

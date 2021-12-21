@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".PreviewPostCardActivity">
+
+    <ImageView
+        android:id="@+id/postcard_generate"
+        android:layout_width="wrap_content"
+        android:layout_height="430dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/save_postcard"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_round_button"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/mvboli"
+        android:padding="15dp"
+        android:text="Click here to save"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:onClick="uploadPostCard"/>
+
+    <Button
+        android:id="@+id/back_to_main"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/bg_round_button"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/mvboli"
+        android:text="Back to main page"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:onClick="backToMainPage"/>
+
+</LinearLayout>

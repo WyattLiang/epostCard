@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "440292529217",
+    "project_id": "epostcard-fc55b",
+    "storage_bucket": "epostcard-fc55b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440292529217:android:7236b6a21844b1d76a22c0",
+        "android_client_info": {
+          "package_name": "com.first.wyatt.postcard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440292529217-clvj6vh5ku0d9s16pht82vpodpc0t2f8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc1x9LugN6VMo6c_QNlgrZaL4GB_QUrms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440292529217-clvj6vh5ku0d9s16pht82vpodpc0t2f8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

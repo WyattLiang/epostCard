@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">postCard</string>
+    <string name="user">User Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_pw">Confirm password</string>
+    <string name="welcome_msg">Welcome to e-PostCard</string>
+    <string name="user_name">Username</string>
+    <string name="login_Btn">Sign In</string>
+    <string name="register_Btn">Register</string>
+    <string name="forgetPassword_Btn">Forget password?</string>
+    <string name="previous_Btn">Previous</string>
+    <string name="next_Btn">Next</string>
+</resources>
